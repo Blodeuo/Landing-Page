@@ -1,12 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=Poppins:wght@100;300;600;700&display=swap');
+/* Thin 100, Light 300, Semi-bold 600, Bold 700 */
+
+
 /* QoL / General */
 * {
     box-sizing: border-box;
 }
 
 body {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Poppins', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin: 0;
-    background-color: #eeeeee;
+    background-color: #293444;
 }
 
 .container {
@@ -15,7 +19,12 @@ body {
     margin: 0 auto;
 }
 
-/* ==Header== */
+h1 {
+    color: #eeeeee;
+    font-size: 2rem;
+}
+
+/* ========Header======== */
 
 .header {
     background: #1f2937
@@ -41,9 +50,9 @@ body {
     transition: all 0.2s;
 }
 
-/*To lazy to fix specificty. Used the forbidden important tag 0_0*/
-.pro {
-    color: #e7ad1b !important;
+
+#pro {
+    color: #e7ad1b;
 }
 
 .navigation ul {
@@ -61,8 +70,6 @@ body {
     padding: 1rem;
 }
 
-/* Logo */
-
 /* Logo animation*/
 .logo:hover {
     transform: scale(1.10);
@@ -73,4 +80,52 @@ body {
     transition: all 0.2s;
 }
 
+/* ========Hero======== */
 
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+    padding-top: 40px;
+}
+
+.hero-left h1 {
+    margin: 0;
+    align-items: center;
+}
+
+.buttons {
+    display:flex;
+    justify-content: start;
+    gap: 2rem;
+}
+
+.main-button {
+    color: #e7e7e7;
+    text-decoration: none;
+    position: relative;
+    margin-top: 10px;
+    background-color: #59973c;
+    padding: 12px 15px;
+    border-radius: 5px;
+}
+
+.main-button:hover {
+    background-color: #67aa48;
+}
+
+.hero-left p {
+    color: #e7e7e7;
+}
+
+/* Image */
+.hero-image {
+    width: 500px;
+    height: 250px;
+    border-radius: 10px;
+}
+
+.hero-image:hover {
+    color
+}
